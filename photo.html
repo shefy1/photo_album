@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>基于锚点的相册</title>
+	<style type="text/css">
+		*{
+			margin:0;
+			padding:0;
+		}
+		body{
+			margin:40px;
+		}
+		ul{
+			margin:0 auto;
+			width:480px;
+			height:360px;
+			list-style-type: none;
+			background:#333;
+			overflow:hidden;
+		}
+		ul li{
+			width:480px;
+			height:360px;
+		}
+		ul li img{
+			padding:40px 0 0 40px;
+		}
+		p{
+			text-align:center;
+			padding-top:10px;
+		}
+		p img{
+			border:1px solid black;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li><a name="p1"><img src="images/pics1.jpg"></a></li>
+		<li><a name="p2"><img src="images/pics2.jpg"></a></li>
+		<li><a name="p3"><img src="images/pics3.jpg"></a></li>
+	</ul>
+	<p>
+		<a href="#p1"><img src="images/p1.jpg" /></a>
+		<a href="#p2"><img src="images/p2.jpg"/></a>
+		<a href="#p3"><img src="images/p3.jpg"/></a>
+	</p>
+</body>
+</html>
